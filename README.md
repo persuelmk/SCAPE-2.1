@@ -6,7 +6,9 @@ SCAPE2 is a clean Python implementation of the `SCAPE-v2.1` single-cell alternat
 
 - Source of scientific truth: frozen `SCAPE-v2.1` commit `e43a33159203c89e9db7c348749d864c1a6b9883`.
 - Reused numerical code is recorded in `docs/REUSED_SOURCE_MANIFEST.tsv` and comes from parity donor commit `f88e9632aa0bdd0b039874e43244314fdb89f214`.
-- Public redistribution is **on hold** until the copyright holder approves a license.
+- The user requested publication of this development snapshot. A repository
+  license has not yet been selected; downstream reuse and redistribution terms
+  remain unresolved until the copyright holder adds an explicit license.
 - Scientific parity is verified on the current 42-region test panel, but the
   implementation is not yet performance-ready: the strict Python backend is
   substantially slower and uses more peak memory than the reference.
@@ -61,3 +63,6 @@ posterior and expected usage from two unmodified reference runs are not exactly
 reproducible. Parity runs use an external, documented wrapper that seeds
 `random` per region without changing any reference source file. Hard PAS usage
 and the PAS-by-cell matrix are deterministic in the observed reference runs.
+
+The complete 42-region site list, runtime measurements and comparison scope are
+recorded in [`TEST_REPORT.md`](TEST_REPORT.md).
